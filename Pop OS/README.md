@@ -50,8 +50,9 @@ This guide walks you through the steps to create a persistent Live USB with **Po
    For **GRUB**:
    ```bash
    persistence
+   ```
    or
-   bash ```
+   ```bash
    persistence persistent-storage=UUID=<UUID_of_your_ext4_partition>
    ```
 5. You can find the UUID of the partition by using blkid (Linux) or diskutil (macOS).
@@ -64,4 +65,5 @@ If you're using Syslinux, look for the APPEND line and add the persistence optio
 2. Select Pop!_OS to boot in "live" mode.
 
 3. Test persistence by creating a file or modifying settings, then reboot and check if changes are still present.
+
 
